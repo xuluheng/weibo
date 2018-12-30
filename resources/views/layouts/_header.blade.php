@@ -20,7 +20,7 @@
 
               <a class="dropdown-item" href="{{ route('users.show', Auth::user()) }}">个人中心</a>
 
-              <a class="dropdown-item" href="#">编辑资料</a>
+              <a class="dropdown-item" href="{{ route('users.edit', Auth::user()) }}">编辑资料</a>
 
               <div class="dropdown-divider"></div>
 
@@ -41,7 +41,7 @@
 
           <li class="nav-item"><a class="nav-link" href="{{ route('help') }}">帮助</a></li>
 
-          <li class="nav-item"><a class="nav-link" href="#">登陆</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">登陆</a></li>
         @endif
 
       </ul>
